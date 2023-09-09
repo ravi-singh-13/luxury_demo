@@ -6,18 +6,18 @@
     /* color */
     --blue: #1e90ff;
     --white: #ffffff;
-    --secondry-gray:#5E5E5E;
+    --secondry-gray: #5E5E5E;
     --primaryBrown: #B18463;
 
     /* font*/
-    --setting:'clig' off, 'liga' off;
-  }
-
-html{
-  height:   100%;
+    --setting: 'clig' off, 'liga' off;
 }
 
-body{
+html {
+    height: 100%;
+}
+
+body {
     min-height: 100%;
     background: var(--white);
     font-family: 'Roboto', sans-serif;
@@ -26,34 +26,35 @@ body{
     letter-spacing: 0.5px
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 /* header */
 
-.mobile-spacing{
+.mobile-spacing {
     height: 80px
 }
 
-.title{
-text-align: center;  
-margin: 0 auto 32px auto; 
+.title {
+    text-align: center;
+    margin: 0 auto 32px auto;
 }
 
-.title h5{
+.title h5 {
     color: var(--secondry-gray);
     margin-bottom: 16px;
-   
+
 }
 
-.horizontal-line{
-height: 4px;
-width: 64px;
-background: var(--primaryBrown);
-margin: auto;
+.horizontal-line {
+    height: 4px;
+    width: 64px;
+    background: var(--primaryBrown);
+    margin: auto;
 }
 
-.title h2{
+.title h2 {
     font-weight: 500;
     font-size: 40px;
     color: var(--primaryBrown);
@@ -61,53 +62,44 @@ margin: auto;
     margin-bottom: 16px;
 }
 
-.title p{
+.title p {
     font-feature-settings: var(--setting);
     font-size: 14px;
     font-weight: 300;
     color: var(--secondry-gray);
     line-height: 20px;
     width: 234px;
-  
-   margin: auto;
+
+    margin: auto;
 }
 
 /* team list */
-.team-list a{
-  
-}
 
-.list-container{
+
+.list-container {
     height: 443px;
-   width: 343px;
+    width: 343px;
     margin: 16px auto 0 auto;
-/* 
-    mask-image: linear-gradient( 0deg, #1A1A1A 0%, rgba(79, 73, 73, 0) 38.16%);
-    -webkit-mask-image: linear-gradient(rgba(225,225,225,0), rgba(0,0,0,1));
-  background: url("https://brokenmenfoundation.org/images/about2.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin:auto
-*/
+   
 }
 
 .list-container::before {
     content: '';
     z-index: 10;
-   
+
     display: block;
     position: absolute;
     height: 443px;
     width: 343px;
-     margin:auto;
-    background: linear-gradient(rgba(26, 26, 26, 0), rgba(26, 26, 26, 1) );
-    
-  }
+    margin: auto;
+    background: linear-gradient(rgba(26, 26, 26, 0), rgba(26, 26, 26, 1));
 
-.list-img{
+}
+
+.list-img {
     height: 100%;
-    width:100%;
-    
+    width: 100%;
+
 }
 
 .personal-info {
@@ -116,110 +108,117 @@ margin: auto;
     padding: 0px 24px 24px 24px;
     position: relative;
     z-index: 10;
-    
+
 }
-.personal-info p{
-    color:var(--white);
+
+.personal-info p {
+    color: var(--white);
     font-feature-settings: var(--setting);
     font-size: 12px;
     font-weight: 400;
-    line-height: 16px; 
+    line-height: 16px;
     margin: 0;
 }
 
-.personal-info h3{
-    color:var(--white);
-margin-top: 0;
-margin-bottom: 8px;
+.personal-info h3 {
+    color: var(--white);
+    margin-top: 0;
+    margin-bottom: 8px;
     font-feature-settings: var(--setting);
-font-family: Roboto;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; /* 140% */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
 }
 
-.job-title{
+.job-title {
     width: 153px;
-    border:1px solid var(--primaryBrown);
+    border: 1px solid var(--primaryBrown);
     border-radius: 100px;
-       display: flex;
-padding: 4px 8px;
-align-items: center;
-gap: 4px;
+    display: flex;
+    padding: 4px 8px;
+    align-items: center;
+    gap: 4px;
 
 }
-.job-title img{  
-width: 14px;
-height: 14px;
-padding: 1px 1.451px 1.322px 1.453px;
-color: #B18463;
+
+.job-title img {
+    width: 14px;
+    height: 14px;
+    padding: 1px 1.451px 1.322px 1.453px;
+    color: #B18463;
 
 }
-.job-title p{
- color: var(--primaryBrown);
+
+.job-title p {
+    color: var(--primaryBrown);
 
 }
 
 @media only screen and (min-width:768px) {
-    .mobile-spacing{
+    .mobile-spacing {
         height: 88px;
     }
-.title h5{
-    line-height: 16px;
-}
-    
-    .horizontal-line{
+
+    .title h5 {
+        line-height: 16px;
+    }
+
+    .horizontal-line {
         width: 104px;
     }
 
-    .title h2{
+    .title h2 {
         margin-top: 10px;
         margin-bottom: 32px;
         font-size: 52px;
         line-height: 60px;
     }
 
-.title p{
-        width:759px;
+    .title p {
+        width: 759px;
         font-size: 16px;
         line-height: 22px;
     }
 
     /* list */
-    
-    .team-list{
+
+    .team-list {
         display: grid;
-        grid-template-columns: auto auto ;
+        grid-template-columns: auto auto;
         column-gap: 16px;
         row-gap: 40px;
         justify-content: center;
     }
 
-    .list-container{
+    .list-container {
         height: 518px;
-       width: 317px;
+        width: 317px;
         margin: 16px auto 0 auto;
     }
-    .list-container:hover{
-        
-            transform: scale(1.1); 
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-        
+
+    .list-container:hover {
+
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
     }
 
-    .list-container::before{
+    .list-container::before {
         height: 518px;
-        width:317px ;
-         
+        width: 317px;
+
     }
-    #end-spacing{
+
+    #end-spacing {
         height: 184px;
     }
 }
 
 @media only screen and (min-width:1024px) {
-    .team-list{
+    .team-list {
         grid-template-columns: auto auto auto;
     }
 }
